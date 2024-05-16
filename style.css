@@ -1,0 +1,234 @@
+body {
+    font-family: "Century Gothic", sans-serif;
+    background-color: palevioletred;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.container {
+    width: 96 vw;
+    height: auto; /* aspect ratio 16:9 */
+    background-color: pink;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 20px;
+    box-sizing: border-box;
+    animation: fadeIn 1s ease-in-out;
+    /* overflow: hidden; */
+}
+
+.cv-container {
+    position: relative;
+    top: 39rem;
+}
+
+.portfolio-container {
+    top: 32rem;
+    position: relative;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: lightseagreen;
+    border-bottom: 2px solid plum;  
+    border-radius: 10px 10px 0 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: lightcoral;
+    animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+    0%, 100% {
+        color: lightgrey;
+    }
+    50% {
+        color: lightblue;
+    }
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+    color: paleturquoise;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+/* .profile-pic:hover {
+    transform: scale(1.1);
+} */
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #ff66b2;
+}
+
+.profile-info p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    padding: 20px 0;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 30%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.column h2 {
+    font-size: 1.5em;
+    color: lightcoral;
+    margin-bottom: 10px;
+    position: relative;
+    animation: slideInLeft 1s ease;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ffe6f2;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+li:hover {
+    background-color: #ffccf2;
+}
+
+a {
+    color: #ff3385;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+a:hover {
+    color: #ff66b2;
+}
+
+.social-media img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffccf2;
+    border-top: 2px solid #ff99cc;
+    border-radius: 0 0 10px 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #ff3385;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.portfolio-pic {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.portfolio-pic:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-info {
+    flex: 1;
+}
+
+.portfolio-info h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #ff66b2;
+}
+
+.portfolio-info p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #666;
+}
